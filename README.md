@@ -28,6 +28,9 @@ Ensure that the credentials in `controllers/db.php` match those on your machine 
 
 For the system to be able to send emails, you need to give it your credentials. You can enter those in the `controllers/email/cred.json` file.
 The cred variable in `controllers/email/index.js` has to be given the absolute path to the `cred.js` file.
+
+You have to enable 'less secure apps' in your gmail account settings for the system to be able to send emails successfully.
+
 You can access an admin account with the following credentials:
 
 email: c@gmail.com
