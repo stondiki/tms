@@ -1,0 +1,536 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: gold;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+li a:hover {
+    text-shadow: 0 0 3px #f45c43;
+}
+
+.hide{
+    display: none;
+}
+
+#side-bar{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 5px 5px lightgray;
+    z-index: 3;
+    background-image: linear-gradient(to top, #4ca1af, #c4e0e5);
+}
+
+#logo{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+#user-info{
+    width: calc(100% - 20px);
+    height: 250px;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #141e30, #243b55);
+    color: white;
+}
+
+#user-info a {
+    color: #3B9AFF;
+}
+
+#nav{
+    width: calc(100% - 10px);
+    height: calc(100% - 500px);
+    background-image: linear-gradient(to bottom, #414141, #000000);
+    padding: 5px;
+    overflow-y: auto; 
+}
+
+#container{
+    width: calc(100% - 285px);
+    margin-left: 250px;
+    display: block;
+    padding: 15px;
+}
+
+#cont-head {
+    height: 75px;
+    margin-left: 50px;
+    background-color: #F2F2F2;
+    min-width: 300px;
+    width: calc(100% - 150px);
+    padding-left: 50px; 
+}
+
+#bars {
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    display: none;
+    margin-top: 10px;
+}
+
+#ttl {
+    float: left;
+}
+
+#notify{
+    position: fixed;
+    top: 25px;
+    right: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+#side-trigger {
+    display: block;
+}
+
+#cls {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#form-container{
+    width: 500px;
+    height: auto;
+    margin-left: calc(50% - 250px);
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#form-container2{
+    width: 800px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.shadow {
+    box-shadow: 0 0 5px 5px lightgray;
+}
+
+.container {
+    min-width: 600px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container2 {
+    min-width: 600px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    position: relative;
+    display: block;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    border-radius: 5px;
+}
+
+/* TABLES START */
+
+.table {
+    width: 100%;
+    min-width: 500px;;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px 5px lightgrey;
+    text-align: start;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.table tr {
+    height: 50px;
+}
+
+.table tr:nth-child(odd){
+    background-color: #F2F2F2;
+}
+
+.table tr td {
+    padding: 5px;
+    margin: 0;
+    border: none;
+}
+
+.table tr th {
+    background-color: #343A40;
+    color: white;
+    text-align: start;
+    padding-left: 10px;
+}
+
+/* TABLES END */
+
+/* BUTTONS START */
+
+.btn {
+    min-height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    min-width: 30px;
+    font-size: 1.15rem;
+    font-weight: 100;
+    padding: 5px;
+    margin: 5px;
+}
+
+.btn-primary {
+    background: #3B9AFF;
+    color: white;
+}
+
+.btn-outline-primary {
+    background: none;
+    border: solid 1px #3B9AFF;
+    color: #3B9AFF;
+}
+
+.btn-outline-primary:hover {
+    background: #3B9AFF;
+    border: solid 1px #3B9AFF;
+    color: white;
+}
+
+.btn-secondary {
+    background: #6C757D;
+    color: white;
+}
+
+.btn-outline-secondary {
+    background: none;
+    border: 1px solid #6C757D;
+    color: #6C757D;
+}
+
+.btn-outline-secondary:hover {
+    background: #6C757D;
+    border: 1px solid #6C757D;
+    color: white;
+}
+
+.btn-danger {
+    background: #DC3545;
+    color: white;
+}
+
+.btn-outline-danger {
+    background: none;
+    border: 1px solid #DC3545;
+    color: #DC3545;
+}
+
+.btn-outline-danger:hover {
+    background: #DC3545;
+    border: 1px solid #DC3545;
+    color: white;
+}
+
+.btn-info {
+    background: #17A2B8;
+    color: white;
+}
+
+.btn-outline-info {
+    background: none;
+    border: 1px solid #17A2B8;
+    color: #17A2B8;
+}
+
+.btn-outline-info:hover {
+    background: #17A2B8;
+    border: 1px solid #17A2B8;
+    color: white;
+}
+
+/* BUTTONS END */
+
+/* FORMS START */
+
+.form-control {
+    height: 35px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    min-width: 100px;
+    font-size: 1rem;
+    padding: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* FORMS END */
+
+/* MODAL START */
+.modal-bg {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    z-index: 5;
+    background: rgba(0,0,0,0.6);
+    left: 0;
+    top: 0;
+}
+.modal {
+    width: 500px;
+    height: auto;
+    border: 1px solid lightgray;
+    margin: 100px auto;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 5px 5px grey;
+    background: white;
+}
+ .modal-header {
+    width: 100%;
+    background-color: #17A2B8;
+    margin-bottom: 10px;
+    clear: both;
+ }
+
+ .modal-title {
+    width: calc(100% - 80px);
+    height: 50px;
+    float: left;
+    padding: 5px;
+ }
+
+ .modal-close {
+    width: 50px;
+    height: 50px;
+    float: right;
+    padding: 10px 10px 5px 5px;
+ }
+
+ .modal-body {
+    display: block;
+    margin-top: 15px;
+    padding: 15px;
+    clear: both;
+ }
+/* MODAL END */
+
+/* TAB START */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    min-width: 275px;
+    width: calc(100% - 150px);
+    margin-left: 75px;
+    margin-top: 15px;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+/* TAB END */
+
+/* TIMETABLE CARD START */
+.ttCard {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid black 1px;
+    padding: 5px;
+    float: left;
+}
+
+.ttCardHead {
+    width: calc(100% - 20px);
+    height: 75px;
+    float: left;
+    clear: both;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to left, #141e30, #243b55);
+}
+
+.ttCode {
+    width: 30%;
+    height: inherit;
+    float: left;
+}
+
+.ttTitle {
+    width: 70%;
+    height: inherit;
+    float: left;
+}
+.ttDt {
+    width: calc(100% - 20px);
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightgray;
+    margin-top: 5px;
+    clear: both;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ttDay {
+    width: calc(100% - 20px);
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    clear: both;
+    float: left;
+    
+}
+
+.ttTime {
+    width: calc(100% - 20px);
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    clear: both;
+    float: left;
+}
+
+.ttVenue {
+    width: calc(100% - 20px);
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    clear: both;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ttLec {
+    width: calc(100% - 20px);
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    clear: both;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* TIMETABLE CARD END */
+
+.info {
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.f-container{
+    max-width: 700px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.question{
+    background-color: #000000;
+    background-image: linear-gradient(to left, #141e30, #243b55);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.answer{
+    padding: 5px;
+}
+
+.cContainer{
+    width: 400px;
+    height: 400px;
+    float: left;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.rHead{
+    width: calc(100% - 10px);
+    height: 50px;
+    float: left;
+    clear: both;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.rBody{
+    width: 100%;
+    height: calc(100% - 50px); 
+}
