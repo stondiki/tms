@@ -22,13 +22,16 @@ A student is able to register for a new semester, view a timetable for units he/
 
 ## Using the system
 The system is built using PHP and has a MySQL database and runs on an Apache server. The email facility is implemented using Node JS.
+
 Once you have all the above set up, import the portal.sql in the database folder into you MySQL database and put the files in the server folder on you machine.
 Ensure that the credentials in `controllers/db.php` match those on your machine otherwise you will get database errors.
+
 For the system to be able to send emails, you need to give it your credentials. You can enter those in the `controllers/email/cred.json` file.
-The cred variable in `contrillers/email/index.js` has to be given the absolute path to the `cred.js` file.
+The cred variable in `controllers/email/index.js` has to be given the absolute path to the `cred.js` file.
 You can access an admin account with the following credentials:
 
 email: c@gmail.com
+
 password: pass
 
 Once you have access, you can create new users. Keep in mind that when a user is created, a random password is generated and sent to the email address that was entered. The password is hashed and hence cannot be retrieved from the database.
