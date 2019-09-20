@@ -10,19 +10,11 @@ var transporter = nodemailer.createTransport({
     }
 });
 
-//console.log(process.argv[2], process.argv[3], process.argv[4], process.argv[5]);
 send(process.argv[2], process.argv[3], process.argv[4], process.argv[5]);
-
-/*var test = [{name : 'Terence', email : 'stondikiyeye@gmail.com'},{name : 'Teresia', email : 'teresiaamunga@gmail.com'},{name : 'William', email : 'williamamunga@gmail.com'}];
-var x = 0;
-while(x < test.length){
-    send(test[x].name, test[x].email, (x+1));
-    x += 1;
-}*/
 
 function send(name1, name2, email, pass){
     var mailOptions = {
-        from: '"Timetable Manager "<terenceamungatest@gmail.com>',
+        from: '"Timetable Manager "<youremail@gmail.com>',
         to: email,
         subject: 'Welcome to TMS. DO NO REPLY!',
         html: `
